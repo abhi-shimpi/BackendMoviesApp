@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const uri = 'mongodb://127.0.0.1:27017/movieapp';
+const mongoURI = process.env.MONGODB_URI;
 
-mongoose.connect(uri,{useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect(mongoURI,{useNewUrlParser: true});
 
 var db = mongoose.connection;
 
