@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://localhost:27017/movieapp";
+const mongoURI = "mongodb+srv://abhishekshimpi23:JfGhjGzyQOJnruwp@cluster0.kwmdw8j.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(mongoURI,{useNewUrlParser: true});
 
